@@ -16,11 +16,11 @@ await axios.get(
 
 ## 날씨는 Clear, Clouds, Drizzle 등 8종류가 있다.
 
-<img src="./images/Clear.jpg" width="120px"></img>
-<img src="./images/Clouds.jpg" width="120px"></img>
-<img src="./images/Drizzle.jpg" width="120px"></img>
-<img src="./images/Dust.jpg" width="120px"></img>
-<img src="./images/Haze.jpg" width="120px"></img>
-<img src="./images/Rain.jpg" width="120px"></img>
-<img src="./images/Snow.jpg" width="120px"></img>
-<img src="./images/Thunderstorm.jpg" width="120px"></img>
+<img src="./images/Clear.jpg" width="150px"></img>
+<img src="./images/Clouds.jpg" width="150px"></img>
+<img src="./images/Drizzle.jpg" width="150px"></img>
+<img src="./images/Dust.jpg" width="150px"></img>
+<img src="./images/Haze.jpg" width="150px"></img>
+<img src="./images/Rain.jpg" width="150px"></img>
+<img src="./images/Snow.jpg" width="150px"></img>
+<img src="./images/Thunderstorm.jpg" width="150px"></img>
