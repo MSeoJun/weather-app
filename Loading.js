@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function Loading() {
   return (
+    // 로딩시 보여지는 화면
     <View style={styles.container}>
       <Text style={styles.text}>서준이의 날씨 앱</Text>
     </View>
