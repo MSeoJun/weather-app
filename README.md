@@ -6,7 +6,7 @@
 
 ## 날씨API를 가져옴.
 
-- longgitude와 latitude는 위도와 경도이다.
+- longitude와 latitude는 위도와 경도이다.
 
 ```
 await axios.get(
