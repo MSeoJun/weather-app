@@ -29,12 +29,6 @@ const weatherOptions = {
     tltle: "Snow",
     desc: "눈이 내리는 날씨",
   },
-  Atmosphere: {
-    iconName: "weather-cloudy",
-    gradient: ["#56CCF2", "#2F80ED"],
-    tltle: "Atmosphere",
-    desc: "뭔지 모르겠는 날씨",
-  },
   Clear: {
     iconName: "weather-sunny",
     gradient: ["#F09819", "#FF512F"],
@@ -53,12 +47,6 @@ const weatherOptions = {
     tltle: "Haze",
     desc: "안개가 낀 날씨",
   },
-  Mist: {
-    iconName: "weather-fog",
-    gradient: ["#D7DDE8", "#757F9A"],
-    tltle: "Mist",
-    desc: "안개가 낀 날씨",
-  },
   Dust: {
     iconName: "weather-cloudy-alert",
     gradient: ["#ACBB78", "#799F0C"],
@@ -72,11 +60,7 @@ export default function Weather({ temp, condition }) {
     <LinearGradient colors={weatherOptions[condition].gradient} style={styles.container}>
       <StatusBar barStyle="light-content" />
       <View style={styles.container2}>
-        <MaterialCommunityIcons
-          name={weatherOptions[condition].iconName}
-          size={130}
-          color="white"
-        />
+        <MaterialCommunityIcons name={weatherOptions[condition].iconName} size={130} color="white" />
         <Text style={styles.temp}>{temp}°</Text>
       </View>
       <View style={{ ...styles.container2, ...styles.textContainer }}>
@@ -89,18 +73,7 @@ export default function Weather({ temp, condition }) {
 
 Weather.propTypes = {
   temp: propTypes.number.isRequired,
-  condition: propTypes.oneOf([
-    "Thunderstorm",
-    "Drizzle",
-    "Rain",
-    "Snow",
-    "Atmosphere",
-    "Clear",
-    "Clouds",
-    "Haze",
-    "Mist",
-    "Dust",
-  ]).isRequired,
+  condition: propTypes.oneOf(["Thunderstorm", "Drizzle", "Rain", "Snow", "Clear", "Clouds", "Haze", "Dust"]).isRequired,
 };
 
 const styles = StyleSheet.create({
